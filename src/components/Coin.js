@@ -1,9 +1,10 @@
-export const Coin = ({ name, price, sybmol }) => {
+export const Coin = ({ name, icon, price, symbol }) => {
   return (
     <div className="coin">
-      <h1>Name: </h1>
-      <h3>Price: </h3>
-      <h3>Symbol: </h3>
+      <h1>Name: {name}</h1>
+      <img src={icon} alt="icon" />
+      <h3>Price: {price}</h3>
+      <h3>Symbol: {symbol}</h3>
     </div>
   );
 };
